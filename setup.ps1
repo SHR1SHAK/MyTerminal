@@ -117,13 +117,6 @@ if ((Test-Path -Path $PROFILE) -and (winget list --name "OhMyPosh" -e) -and ($fo
     Write-Warning "Setup completed with errors. Please check the error messages above."
 }
 
-# Terminal Icons Install
-# try {
-#     Install-Module -Name Terminal-Icons -Repository PSGallery -Force
-# }
-# catch {
-#     Write-Error "Failed to install Terminal Icons module. Error: $_"
-# }
 # zoxide Install
 try {
     winget install -e --id ajeetdsouza.zoxide
@@ -132,3 +125,4 @@ try {
 catch {
     Write-Error "Failed to install zoxide. Error: $_"
 }
+Write-Host "Setup completed successfully. Please restart your PowerShell session to apply changes. Change the font to JetBrainsMono NF in the settings of your terminal."
