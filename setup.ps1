@@ -84,6 +84,7 @@ else {
 # OMP Install
 try {
     winget install -e --accept-source-agreements --accept-package-agreements JanDeDobbeleer.OhMyPosh
+    Write-Host "OhMyPosh installed successfully."
 }
 catch {
     Write-Error "Failed to install Oh My Posh. Error: $_"
