@@ -118,12 +118,12 @@ if ((Test-Path -Path $PROFILE) -and (winget list --name "OhMyPosh" -e) -and ($fo
 }
 
 # Terminal Icons Install
-try {
-    Install-Module -Name Terminal-Icons -Repository PSGallery -Force
-}
-catch {
-    Write-Error "Failed to install Terminal Icons module. Error: $_"
-}
+# try {
+#     Install-Module -Name Terminal-Icons -Repository PSGallery -Force
+# }
+# catch {
+#     Write-Error "Failed to install Terminal Icons module. Error: $_"
+# }
 # zoxide Install
 try {
     winget install -e --id ajeetdsouza.zoxide
